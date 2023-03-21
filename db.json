@@ -1,0 +1,325 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "MacBook Air",
+      "price": 908,
+      "year": 2023,
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "250 GB",
+        "display": "Rotina",
+        "memory": "250 gb"
+      }
+    },
+    {
+      "id": 2,
+      "title": "IPAD ",
+      "price": 500,
+      "year": 2022,
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "49 GB",
+        "display": "Rotina",
+        "memory": "250 gb"
+      }
+    },
+    {
+      "id": 4,
+      "title": "SAMSUNG",
+      "price": "200",
+      "year": "2019",
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "45",
+        "ssd": "DCS",
+        "memory": "456",
+        "display": "45S"
+      }
+    },
+    {
+      "id": 7,
+      "title": "fsususus",
+      "price": "455",
+      "year": "",
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "",
+        "ssd": "",
+        "memory": "",
+        "display": ""
+      }
+    }
+  ],
+  "basket": [
+    {
+      "id": 2,
+      "title": "IPAD ",
+      "price": 500,
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "49 GB",
+        "year": 2022,
+        "display": "Rotina",
+        "memory": "250 gb"
+      },
+      "quantity": 26
+    },
+    {
+      "id": 1,
+      "title": "MacBook Air",
+      "price": 908,
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "250 GB",
+        "year": 2023,
+        "display": "Rotina",
+        "memory": "250 gb"
+      },
+      "quantity": 7
+    },
+    {
+      "id": 3,
+      "title": "gdfdgdf",
+      "price": "45",
+      "year": "",
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "",
+        "ssd": "",
+        "memory": "",
+        "display": ""
+      },
+      "quantity": 14
+    },
+    {
+      "id": 5,
+      "title": "sdfds",
+      "price": "",
+      "year": "8588",
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "",
+        "ssd": "",
+        "memory": "455",
+        "display": "vdvd"
+      },
+      "quantity": 31
+    },
+    {
+      "id": 4,
+      "title": "SAMSUNG",
+      "price": "200",
+      "year": "2019",
+      "image": "/assets/images/portfolio-02.jpg",
+      "configure": {
+        "chip": "45",
+        "ssd": "DCS",
+        "memory": "456",
+        "display": "45S"
+      },
+      "quantity": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "name": "Администратор"
+    },
+    {
+      "name": "sdgdgdsgsd",
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "gender": "женшина",
+      "id": 2
+    },
+    {
+      "name": "222355d",
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "gender": "мужчина",
+      "id": 3
+    },
+    {
+      "name": "sdadasdyjy",
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "gender": "мужчина",
+      "id": 4
+    },
+    {
+      "name": "sdfdfdsj",
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "gender": "мужчина",
+      "id": 5
+    },
+    {
+      "name": "ghkktjhntk",
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "gender": "женшина",
+      "id": 6
+    },
+    {
+      "name": ",hjhjmhm",
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "gender": "женшина",
+      "id": 7
+    },
+    {
+      "name": "рьрь",
+      "email": "rere@dfgf.42",
+      "password": "fdfddfdfdf",
+      "gender": "женшина",
+      "id": 8
+    },
+    {
+      "name": "iulyu",
+      "email": "uktam.xewew@mail.com",
+      "password": "56545444",
+      "gender": "мужчина",
+      "id": 9
+    },
+    {
+      "name": "fhgfhgfh",
+      "email": "gjgfjf@email.ru",
+      "password": "984986544644",
+      "gender": "мужчина",
+      "id": 10
+    },
+    {
+      "name": "iuluk",
+      "email": "fdfd@email.com",
+      "password": "65666666666",
+      "gender": "женшина",
+      "id": 11
+    },
+    {
+      "name": "hgfhg",
+      "email": "hththth@email.ru",
+      "password": "65555555555555555555566666",
+      "gender": "мужчина",
+      "id": 12
+    },
+    {
+      "name": "rjyjgj",
+      "email": "rgdfgdf@email.re",
+      "password": "9865666666666666666666666666666",
+      "gender": "женшина",
+      "id": 13
+    },
+    {
+      "name": "tyjytj",
+      "email": "urata@email.ru",
+      "password": "ddddddddddddddddddddddddd",
+      "gender": "мужчина",
+      "id": 14
+    },
+    {
+      "name": "dgdgdf",
+      "email": "mail@email.com",
+      "password": "rthyrfhfhf85",
+      "gender": "женшина",
+      "id": 15
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "gender": "",
+      "id": 16
+    },
+    {
+      "name": "ggcgcgcg",
+      "email": "mail@email.com",
+      "password": "rthyrfhfhf85",
+      "gender": "женшина",
+      "id": 17
+    },
+    {
+      "name": "fgnh5ryht",
+      "email": "mail@email.com",
+      "password": "rthyrfhfhf85",
+      "gender": "мужчина",
+      "id": 18
+    },
+    {
+      "name": "guilgg",
+      "email": "mail@email.com",
+      "password": "rthyrfhfhf85",
+      "gender": "мужчина",
+      "id": 19
+    }
+  ],
+  "bill": {
+    "value": 100000,
+    "currency": "RUB"
+  },
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": 15000,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 10000,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Машина",
+      "capacity": 7000
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "12.06.2017 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 1300,
+      "category": 1,
+      "date": "13.06.2017 19:49:02",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "type": "income",
+      "amount": 1480,
+      "category": 2,
+      "date": "17.06.2017 14:00:48",
+      "id": 3,
+      "description": "Поход в окей с баллами. Бесплатная еда"
+    },
+    {
+      "type": "outcome",
+      "amount": 2470,
+      "category": 2,
+      "date": "17.06.2017 14:00:58",
+      "id": 4,
+      "description": "Закупка на неделю"
+    },
+    {
+      "type": "outcome",
+      "amount": 4000,
+      "category": 3,
+      "date": "10.06.2017 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+
+ 
+<mat-card-subtitle class="login-title">LOGIN</mat-card-subtitle>
+<div class="alert" *ngIf="message?.text">{{message?.text}}</div>
+<div class="success" *ngIf="successMessage?.text">{{successMessage?.text}}</div>
+  <div class="login-form">
+    <form class="example-form login" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="email" class="input" placeholder="Enter your valid email address">
+          <mat-error *ngIf="loginForm.get('email').touched && loginForm.get('email').invalid"> 
+            <mat-error *ngIf="loginForm.get('email').errors['required']">
+                This field cannot be empty!
+            </mat-error>
+            <mat-error *ngIf="loginForm.get('email').errors['email']">
+                Email is <strong>required</strong>
+            </mat-error>
+          </mat-error>    
+        </mat-form-field> 
+
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+          <input [type]="passwordState? 'text': 'password'" matInput formControlName="password" id="password-input" class="input" placeholder="Enter your password">
+          <mat-error *ngIf="loginForm.get('password').touched && loginForm.get('password').invalid"> 
+            <mat-error *ngIf="loginForm.get('password').errors['required']">
+                This field cannot be empty!
+            </mat-error>
+            <mat-error *ngIf="loginForm.get('password').errors['minlength']">
+                Password is <strong>required</strong>
+            </mat-error>
+        </mat-error>  
+      </mat-form-field> 
+      <mat-checkbox class="example-margin" [checked]="passwordState" (change)="showPassword($event)">Паказать пароль</mat-checkbox>
+     <div class="btn-section">
+         <div class="div-btn">
+            <button mat-raised-button color="warn" [disabled]="loginForm.invalid" type="submit" class="log-btn">Войти</button>
+         </div>     
+         <p class="regis-section">Нет аккаунта?<a routerLink="/registration" class="regis">Зарегистрироваться</a></p>
+     </div>
+
+       </form>
+  </div> 
+

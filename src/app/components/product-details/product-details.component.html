@@ -1,0 +1,23 @@
+
+<div class="spiner" *ngIf="!isLoaded">
+  <mat-spinner
+  [diameter]="70"
+  ></mat-spinner>
+</div>
+<div class="container" *ngIf="isLoaded">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{product.title}}</mat-card-title>
+          <img mat-card-image src="{{product.image}}">
+        </mat-card-header>
+        <mat-card-content>
+          <p>Price:{{product.price | currency:'USD'}}</p>
+          <p>Chip: {{product.configure.chip}}</p>
+          <p>Year: {{product.configure.year}}</p>
+          <p>Display: {{product.configure.display}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="button" mat-flat-button color="danger">Удалить</button>
+        </mat-card-actions>
+      </mat-card>     
+</div>

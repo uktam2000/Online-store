@@ -1,0 +1,56 @@
+.container{
+    margin: 0 auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.example-card{
+   margin: 15px 15px;
+}
+
+.example-spacer{
+    flex: 1 1 auto;
+}
+
+
+.mat-card{
+    background-color: aliceblue;
+    color: black;
+    margin-bottom: 70px;
+}
+
+
+
+.mat-card-image{
+    max-width: 250px;
+}
+
+.mat-card-header{
+    display: block;
+}
+
+.button{
+    margin-right: 5px;
+}
+
+mat-form-field {
+    margin-right: 12px;
+}
+
+/*Spinner*/
+
+.spiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:host ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {   
+    stroke: #00b8e6;
+}
+
+//Snackbar

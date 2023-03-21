@@ -1,0 +1,35 @@
+
+
+
+<div class="container">
+   <!-- dynamic content login or reg -->
+    <mat-card>
+      <div class="mat-card-content">
+     <mat-card-header>
+       <mat-card-title>LEG<span class="title">END</span></mat-card-title>
+       <mat-card-subtitle>AUTHENTICATION</mat-card-subtitle>
+     </mat-card-header>
+     <mat-card-actions>
+        <router-outlet></router-outlet>
+     </mat-card-actions>
+    </div>
+      <!-- content loader -->
+   <div class="auth-spinner" *ngIf="loaderService.loaderStateRx.value">
+    <div class="div-spin">
+      <mat-progress-spinner
+        [diameter]="60"
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value">
+      </mat-progress-spinner>
+    </div> 
+  </div>
+   </mat-card>
+
+  
+ </div>
+
+
+
+

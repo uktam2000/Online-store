@@ -1,0 +1,57 @@
+
+
+
+<div class="spiner" *ngIf="!isLoaded">
+  <mat-spinner
+  [diameter]="70"
+  ></mat-spinner>
+</div>
+
+
+<div class="container">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span class="example-spacer"></span>
+      <button class="button" mat-flat-button color="basic" (click)="openDialog()">Добавить</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+    <mat-card class="example-card" *ngFor="let product of products">
+        <mat-card-header>
+          <mat-card-title>{{product.title}}</mat-card-title>
+          <img mat-card-image src="{{product.image}}">
+        </mat-card-header>
+        <mat-card-content>
+          <p>Price:{{product.price | currency:'USD'}}</p>
+          <p>Chip: {{product.configure.chip}}</p>
+          <p>Year: {{product.year}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="button" mat-flat-button color="danger" (click)="addToBasket(product)" type="button">В карзину</button>
+          <button class="button" mat-flat-button color="primary" [routerLink]="['/home/product',product.id]">Подробнее</button>
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button> 
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="deleteItem(product.id)">
+              <mat-icon>delete</mat-icon>
+              <span>Удалить</span>
+            </button>
+            <button mat-menu-item (click)="openDialog(product)">
+              <mat-icon>edit</mat-icon>
+              <span>Редактировать</span>
+            </button>
+          </mat-menu>
+          
+        </mat-card-actions>
+      </mat-card>     
+</div>
+
+<!-- <mat-form-field appearance="fill">
+  <mat-label>Snack bar duration (seconds)</mat-label>
+  <input type="number" [(ngModel)]="durationInSeconds" matInput>
+</mat-form-field> -->
+
+<!-- <button mat-stroked-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+  Pizza party
+</button> -->

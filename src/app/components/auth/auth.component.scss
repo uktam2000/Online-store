@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 40px 50px;
+
+    
+}
+
+.title{
+    color:rgb(209, 55, 55);
+}
+
+mat-card{
+    width: 500px;
+    background:#44a3e6;
+    color: #fff;
+    position: relative;
+    padding: 0;
+}
+
+.mat-card-content{
+    padding: 16px;
+}
+
+
+.auth-spinner{
+    background-color: #e5e5e57a;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .example-margin {
+//     color: red;
+//     height: 20px;
+//     width: 50px;
+// }
+
+// .mat-progress-spinner circle, .mat-spinner circle {
+//     stroke: #29272a;
+// }
+
+// element.style {
+//     // animation-name: mat-progress-spinner-stroke-rotate-100;
+//     // stroke-dasharray: 282.743px;
+//     stroke-width: 7%;
+// }
+
+:host ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {   
+    stroke: #00b8e6;
+}
+

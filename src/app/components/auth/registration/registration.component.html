@@ -1,0 +1,62 @@
+<mat-card-subtitle class="regis-title">REGISTRATION</mat-card-subtitle>
+<div class="alert" *ngIf="message?.text">{{message?.text}}</div>
+  <div class="regis-form">
+    <form class="example-form login" [formGroup]="regisForm" (ngSubmit)="onSubmit()">
+ 
+        <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input type="text" matInput formControlName="name" class="input" placeholder="Enter your name">
+            <mat-error *ngIf="regisForm.get('name').touched && regisForm.get('name').invalid"> 
+              <mat-error *ngIf="regisForm.get('name').errors['required']">
+                  This field cannot be empty!
+              </mat-error>
+            </mat-error>    
+          </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="email" class="input" placeholder="Enter your valid email address">
+          <mat-error *ngIf="regisForm.get('email').touched && regisForm.get('email').invalid"> 
+            <mat-error *ngIf="regisForm.get('email').errors['required']">
+                This field cannot be empty!
+            </mat-error>
+            <mat-error *ngIf="regisForm.get('email').errors['email']">
+                Email is <strong>required</strong>
+            </mat-error>
+          </mat-error>    
+        </mat-form-field>
+
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+          <input [type]="passwordState? 'text' : 'password'" matInput formControlName="password" class="input" placeholder="Enter your password">
+          <mat-error *ngIf="regisForm.get('password').touched && regisForm.get('password').invalid"> 
+            <mat-error *ngIf="regisForm.get('password').errors['required']">
+                This field cannot be empty!
+            </mat-error>
+            <mat-error *ngIf="regisForm.get('password').errors['minlength']">
+                Password is <strong>required</strong>
+            </mat-error>
+        </mat-error>   
+      </mat-form-field> 
+      <mat-checkbox class="example-margin" [checked]="passwordState" (change)="passwordState=!passwordState">Паказать пароль</mat-checkbox>
+
+      <section class="example-section">
+        <label class="example-margin">Выберите свой пол:</label>
+        <mat-radio-group formControlName="gender">
+          <mat-radio-button class="example-margin" value="мужчина">Мужчина</mat-radio-button>
+          <mat-radio-button class="example-margin" value="женшина">Женшина</mat-radio-button>
+        </mat-radio-group>
+      </section>
+
+     <div class="btn-section">
+         <div class="div-btn">
+            <button mat-raised-button color="success" type="submit" class="log-btn">Зарегистрироваться</button>
+         </div>     
+         <p class="regis-section">Есть аккаунта?<a routerLink="/login" class="regis">Войти</a></p>
+     </div>
+
+       </form>
+  </div> 
+
+
